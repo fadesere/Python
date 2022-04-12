@@ -1,3 +1,13 @@
+# Change the current working directory with os.chdir()
+import os
+cwd = os.getcwd()
+print('Current Working Directory is: ', cwd)
+absolute_path = 'C:/Users/ok/Desktop/Python'
+os.chdir(absolute_path)
+print('New working directory is: ', os.getcwd())
+# Returns:
+# Current Working Directory is:  /Users/datagy
+# New working directory is:  /Users/datagy/Documents
 # import the `csv` library
 import csv
 # open the `202009CitibikeTripdataExample.csv` file in read ("r") mode
