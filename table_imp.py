@@ -14,5 +14,12 @@ data = pd.read_csv('202009-citibike-tripdata.csv')
 
 # print output table %%
 data
+# print distinct values in particular column %%
+print(data['gender'].value_counts())
 
-
+# check first five row in table
+data.head()
+# check last five row in table
+data.tail()
+#count distinct values in all variables
+print(data.nunique())
